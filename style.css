@@ -1,0 +1,88 @@
+/* Nav bar */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-weight: bold;
+    background: black;
+    font-size: 1.5em;
+}
+
+nav>a {
+    cursor: pointer;
+    border: 1px solid;
+    text-align: center;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.nav-link-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.nav>div:hover {
+    background: rgb(112, 100, 100);
+}
+
+a {
+    text-align: center;
+    color: white;
+}
+
+a:hover {
+    background-color: grey;
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+/* Nav bar complete */
+
+section {
+    z-index: -5;
+    display: block;
+    background: rgb(209, 205, 205);
+}
+
+section>ul {
+    margin-left: 1.5rem;
+}
+
+section>p {
+    margin-left: 0.5rem;
+}
+
+header {
+    background: rgb(175, 160, 160);
+    border-radius: 10px;
+    /* display:block; */
+}
+
+code {
+    background: lightgray;
+    display: block;
+    text-align: center;
+}
+
+@media (max-width:550px) {
+    nav {
+        position: sticky;
+        justify-content: space-between;
+        grid-template-columns: 1fr;
+        top: 0%;
+        font-size: 1rem;
+    }
+    nav>a {
+        text-align: left;
+    }
+}
